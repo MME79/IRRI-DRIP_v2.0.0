@@ -1,0 +1,12 @@
+streamlit>=1.62,<2
+pandas>=2.3.3,<3
+openpyxl>=3.1
+# Charts: the same library and version OpenIrri pins, so the two programs
+# draw with one engine.
+plotly>=5.24,<6
+
+# Field layout on a map. folium draws with OpenStreetMap tiles and needs NO
+# account and NO API key. Every page except the map steps works without these;
+# those steps degrade to an explanatory message rather than crashing the app.
+folium>=0.17
+streamlit-folium>=0.23
